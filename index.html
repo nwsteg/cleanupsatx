@@ -14,11 +14,6 @@
         h1 {
             color: #333;
         }
-        .logo {
-            max-width: 150px;
-            height: auto;
-            margin: 20px auto;
-        }
         .counter {
             font-size: 1.5em;
             margin: 20px 0;
@@ -27,17 +22,20 @@
             margin: 20px 0;
             font-size: 1.2em;
         }
+        .contact a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
         .twitter-timeline {
             margin: 20px auto;
             width: 80%;
             max-width: 600px;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Small Logo Picture -->
-    <img src="logo.png" alt="cleanupsatx logo" class="logo">
-
     <h1>Let's clean up San Antonio, Texas!</h1>
 
     <!-- Counters -->
@@ -49,8 +47,10 @@
     <!-- Contact Information -->
     <div class="contact">
         <p>Contact us:</p>
-        <p>X: <a href="https://twitter.com/cleanupsatx">@cleanupsatx</a></p>
-        <p>Gmail: <a href="mailto:cleanupsatx.contact@gmail.com">cleanupsatx.contact@gmail.com</a></p>
+        <p>
+            <a href="https://twitter.com/cleanupsatx"><i class="fab fa-twitter"></i> @cleanupsatx</a>
+            <a href="mailto:cleanupsatx.contact@gmail.com"><i class="fas fa-envelope"></i> cleanupsatx.contact@gmail.com</a>
+        </p>
     </div>
 
     <!-- Twitter Feed -->
