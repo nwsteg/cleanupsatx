@@ -14,6 +14,19 @@
         h1 {
             color: #333;
         }
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin: 20px auto;
+        }
+        .counter {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .contact {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
         .twitter-timeline {
             margin: 20px auto;
             width: 80%;
@@ -22,10 +35,33 @@
     </style>
 </head>
 <body>
+    <!-- Small Logo Picture -->
+    <img src="logo.jpg" alt="cleanupsatx logo" class="logo">
+
     <h1>Let's clean up San Antonio, Texas!</h1>
+
+    <!-- Counters -->
+    <div class="counter">
+        <div>Clean Ups Completed: <span id="cleanup-count">0</span></div>
+        <div>Trash Picked Up: <span id="trash-count">0</span> lbs</div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact">
+        <p>Contact us:</p>
+        <p>X: <a href="https://twitter.com/cleanupsatx">@cleanupsatx</a></p>
+        <p>Gmail: <a href="mailto:cleanupsatx.contact@gmail.com">cleanupsatx.contact@gmail.com</a></p>
+    </div>
+
+    <!-- Twitter Feed -->
     <p>Follow our latest updates on Twitter:</p>
-    <!-- Twitter Embed Code -->
     <a class="twitter-timeline" href="https://twitter.com/cleanupsatx?ref_src=twsrc%5Etfw">Tweets by cleanupsatx</a> 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script>
+        // Update the counters (replace with actual data)
+        document.getElementById('cleanup-count').innerText = '10'; // Example data
+        document.getElementById('trash-count').innerText = '250'; // Example data
+    </script>
 </body>
 </html>
